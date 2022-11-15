@@ -1,16 +1,15 @@
 public class ex8_1 {
     public static void main(String[] args) {
-        StringBuilder strB = new StringBuilder("3+56");
-        System.out.println(strB.toString());
-        strB.append("=59");
-        System.out.println(strB.toString());
-        strB.replace(1, 2, "-");
-        strB.replace(5, 7, "-53");
-        System.out.println(strB.toString());
-        strB.replace(1, 2, "*");
-        strB.replace(5, 8, "168");
-        System.out.println(strB.toString());
+        StringBuilder strB = new StringBuilder();
+        int a=3;
+        int b=56;
+        strB.append(String.format("%d+%d=%d\n", a, b, a+b));
+        strB.append(String.format("%d-%d=%d\n", a, b, a-b));
+        strB.append(String.format("%d*%d=%d\n", a, b, a*b));
+        System.out.println(strB);
         strB.replace(4, 5, " равно ");
-        System.out.println(strB.toString());
+        strB.replace(18, 19, " равно ");
+        strB.replace(33, 34, " равно ");
+        System.out.println(strB);
     }
 }
